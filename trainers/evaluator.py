@@ -24,7 +24,7 @@ def evaluate(model, loader, device) -> Tuple[float, Dict[str, float]]:
         total_n += y.size(0)
 
         probs = torch.softmax(logits, dim=1)[:, 1]  # 取出属于 Webshell 类别的概率
-        threshold = 0.3  # 🔥 关键：降低阈值！从 0.5 降到 0.3 甚至 0.2
+        threshold = 0.4  # 🔥 关键：降低阈值！从 0.5 降到 0.3 甚至 0.2
         pred = (probs > threshold).long().detach().cpu().tolist()
         ys.extend(y.detach().cpu().tolist())
         preds.extend(pred)

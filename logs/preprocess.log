@@ -78,3 +78,57 @@
   - webshell: total=0 | php=0 | asp=0 | other=0
   - normal: total=0 | php=0 | asp=0 | other=0
 [2025-12-22 18:53:40,043] INFO - Preprocess finished.
+[2025-12-22 19:59:23,392] INFO - Start preprocessing...
+[2025-12-22 19:59:23,414] INFO - Raw dir: D:\Edge\MPNN1\data\raw
+[2025-12-22 19:59:23,414] INFO - Processed dir: D:\Edge\MPNN1\data\processed
+[2025-12-22 19:59:23,414] INFO - [RAW] file distribution (by extension)
+  - webshell: total=0 | php=0 | asp=0 | other=0
+  - normal: total=0 | php=0 | asp=0 | other=0
+[2025-12-22 20:04:04,736] INFO - Start preprocessing...
+[2025-12-22 20:04:04,736] INFO - Raw dir: D:\Edge\MPNN1\data\raw
+[2025-12-22 20:04:04,736] INFO - Processed dir: D:\Edge\MPNN1\data\processed
+[2025-12-22 20:04:04,737] INFO - [RAW] file distribution (by extension)
+  - webshell: total=0 | php=0 | asp=0 | other=0
+  - normal: total=0 | php=0 | asp=0 | other=0
+[2025-12-22 20:04:16,971] INFO - Build done. Meta: {}
+[2025-12-22 20:05:08,614] INFO - Start preprocessing...
+[2025-12-22 20:05:08,615] INFO - Raw dir: D:\Edge\MPNN1\data\raw
+[2025-12-22 20:05:08,615] INFO - Processed dir: D:\Edge\MPNN1\data\processed
+[2025-12-22 20:05:08,615] INFO - [RAW] file distribution (by extension)
+  - webshell: total=0 | php=0 | asp=0 | other=0
+  - normal: total=0 | php=0 | asp=0 | other=0
+[2025-12-22 20:05:18,432] INFO - Build done. Meta: {}
+[2025-12-22 20:07:45,650] INFO - Start preprocessing...
+[2025-12-22 20:07:45,650] INFO - Raw dir: D:\Edge\MPNN1\data\raw
+[2025-12-22 20:07:45,650] INFO - Processed dir: D:\Edge\MPNN1\data\processed
+[2025-12-22 20:07:45,731] INFO - [RAW] file distribution (by extension)
+  - webshell: total=325 | php=274 | asp=0 | other=51
+  - normal: total=402 | php=201 | asp=0 | other=201
+[2025-12-22 21:29:20,788] INFO - Build done. Meta: {'train': 581, 'val': 72, 'test': 74}
+[2025-12-22 21:29:21,421] INFO - [PROCESSED] train distribution (by d.lang)
+  - webshell: total=257 | php=0 | asp=0 | other=257
+  - normal: total=314 | php=0 | asp=0 | other=314
+[2025-12-22 21:29:21,421] INFO - [PROCESSED] val distribution (by d.lang)
+  - webshell: total=37 | php=0 | asp=0 | other=37
+  - normal: total=35 | php=0 | asp=0 | other=35
+[2025-12-22 21:29:21,425] INFO - [PROCESSED] test distribution (by d.lang)
+  - webshell: total=27 | php=0 | asp=0 | other=27
+  - normal: total=46 | php=0 | asp=0 | other=46
+[2025-12-22 21:29:21,425] INFO - Preprocess finished.
+[2025-12-23 13:22:44,149] INFO - Start preprocessing...
+[2025-12-23 13:22:44,174] INFO - Raw dir: D:\Edge\MPNN1\data\raw
+[2025-12-23 13:22:44,174] INFO - Processed dir: D:\Edge\MPNN1\data\processed
+[2025-12-23 13:22:44,181] INFO - [RAW] file distribution (by extension)
+  - webshell: total=601 | php=201 | asp=0 | other=400
+  - normal: total=645 | php=228 | asp=0 | other=417
+[2025-12-23 14:38:52,427] INFO - Build done. Meta: {'train': 996, 'val': 124, 'test': 126}
+[2025-12-23 14:38:56,960] INFO - [PROCESSED] train distribution (by d.lang)
+  - webshell: total=469 | php=0 | asp=0 | other=469
+  - normal: total=507 | php=0 | asp=0 | other=507
+[2025-12-23 14:38:56,962] INFO - [PROCESSED] val distribution (by d.lang)
+  - webshell: total=57 | php=0 | asp=0 | other=57
+  - normal: total=64 | php=0 | asp=0 | other=64
+[2025-12-23 14:38:56,966] INFO - [PROCESSED] test distribution (by d.lang)
+  - webshell: total=60 | php=0 | asp=0 | other=60
+  - normal: total=62 | php=0 | asp=0 | other=62
+[2025-12-23 14:38:56,966] INFO - Preprocess finished.

@@ -23,14 +23,14 @@ class Config:
         os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "logs"
     ))
 
-    # [新增] CodeBERT 本地保存路径 (项目根目录/pretrained_models/codebert-base)
+    # [新增] CodeBERT 本地保存路径 (自动保存在项目下的 pretrained_models 文件夹)
     codebert_local_path: str = field(default_factory=lambda: os.path.join(
         os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 
         "pretrained_models", 
         "codebert-base"
     ))
 
-    # [新增] CodeBERT 远程模型名称 (用于下载)
+    # [新增] CodeBERT 远程模型名称
     codebert_remote_name: str = "microsoft/codebert-base"
 
     # Data split
@@ -59,17 +59,20 @@ class Config:
     # Training
     device: str = "cuda"
     num_workers: int = 0
-    batch_size: int = 8
+    # [修改] 调小 batch_size 防止 CodeBERT 特征导致显存溢出
+    batch_size: int = 8  
     lr: float = 1e-3
     weight_decay: float = 1e-4
     epochs: int = 30
     grad_clip: float = 2.0
 
     # Model
-    hidden_dim: int = 128
+    # [修改] 增大隐藏层维度，更好地承载 773 维的输入特征
+    hidden_dim: int = 128  
     gnn_layers: int = 2
     inter_steps: int = 2
-    dropout: float = 0.2
+    # [修改] 稍微增加 Dropout 防止过拟合
+    dropout: float = 0.3  
     num_classes: int = 2
 
     def ensure_dirs(self):
